@@ -322,14 +322,6 @@ TT16 (2.201)
 
 # Diagrams
 
-- Mermaid `mermaid-js`
-  - Sequence
-  - Flowchart
-  - Gantt
-  - Class Diagram
-  - State Diagram
-    Pie Chart
-
 ---
 
 # UML Sequence
