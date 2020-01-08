@@ -1,5 +1,6 @@
 ---
 marp: true
+title: "IAP 2020: Introduction to Markdown and MkDocs"
 theme: uncover
 class: invert
 paginate: false
@@ -18,6 +19,7 @@ Wei Min Cher
 ---
 
 <!-- paginate: true -->
+<!-- footer: IAP 2020: Introduction to Markdown and MkDocs -->
 
 # Contents
 
@@ -335,7 +337,9 @@ TT16 (2.201)
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
+
 ​```
+
 ````
 
 ---
