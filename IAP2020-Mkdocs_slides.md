@@ -57,17 +57,17 @@ Wei Min Cher
 
 <br>
 
-`# This is an <h1> tag`
-`## This is an <h2> tag`
-`###### This is an <h6> tag`
+`# This is an h1 tag`
+`## This is an h2 tag`
+`###### This is an h6 tag`
 
 ---
 
-# This is an <h1> tag
+# This is an h1 tag
 
-## This is an <h2> tag
+## This is an h2 tag
 
-###### This is an <h6> tag
+###### This is an h6 tag
 
 ---
 
@@ -80,6 +80,12 @@ Wei Min Cher
 `**This will be bold**` `__This will also be bold__`
 <br>
 `_You **can** combine them_`
+
+---
+
+_This will be italic_ _This will also be italic_
+**This will be bold** **This will also be bold**
+_You **can** combine them_
 
 ---
 
@@ -107,8 +113,8 @@ Wei Min Cher
 1. Item 1
 2. Item 2
 3. Item 3
-   1. Item 3a
-   2. Item 3b
+  i. Item 3a
+  ii. Item 3b
 ```
 
 ---
@@ -116,8 +122,8 @@ Wei Min Cher
 1. Item 1
 2. Item 2
 3. Item 3
-   1. Item 3a
-   2. Item 3b
+   i. item 3a
+   ii. item 3b
 
 ---
 
@@ -247,8 +253,7 @@ def foo():
 ```text
 As Kanye West said:
 
-> We're living the future so
-> the present is our past.
+> We're living the future so the present is our past.
 ```
 
 ---
@@ -276,12 +281,8 @@ http://typora.io/
 <br>
 
 ```text
-The identity matrix is $\left[
-    {\begin{array}{cc}
-        1 & 0\\
-        0 & 1
-    \end{array}}
-\right]$.
+The identity matrix is $\left[\begin{array}{cc}
+1 & 0\\0 & 1\end{array}\right]$.
 
 $$ e = mc^2$$
 
@@ -289,28 +290,9 @@ $$ e = mc^2$$
 
 ---
 
-The identity matrix is $\left[
-    {\begin{array}{cc}
-        1 & 0\\
-        0 & 1
-    \end{array}}
-\right]$.
+The identity matrix is $\left[\begin{array}{cc}1 & 0\\0 & 1\end{array}\right]$.
 
 $$ e = mc^2$$
-
----
-
-# Chemistry
-
-<br>
-
-```text
-$\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}$
-```
-
----
-
-$CH_{4}$ + $2(O_{2}+\frac{79}{21}N_{2})$
 
 ---
 
@@ -319,6 +301,8 @@ $CH_{4}$ + $2(O_{2}+\frac{79}{21}N_{2})$
 20 January 2020 (Monday)
 TT16 (2.201)
 7 - 10 pm
+<br>
+Sign up [here](https://docs.google.com/forms/d/e/1FAIpQLScYzcq2nsw-QWtsPPeN9J_t96SjpuSPPCvh4IDOBchfeol5UQ/viewform).
 
 ---
 
