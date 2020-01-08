@@ -468,7 +468,7 @@ Swiss-army knife to convert content
 
 # Demo
 
-Converting Markdown to PDF
+Converting Markdown to HTML
 
 ---
 
