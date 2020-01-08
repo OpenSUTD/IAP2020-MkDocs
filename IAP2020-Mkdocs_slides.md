@@ -529,7 +529,7 @@ theme:
 <br>
 
 ```sh
-mkdocs serve site
+mkdocs serve
 ```
 
 - Site up at [localhost:8000](http://localhost:8000/)
@@ -548,7 +548,7 @@ mkdocs serve site
 <br>
 
 ```sh
-mkdocs build site
+mkdocs build
 ```
 
 - By default, files at `/site`
