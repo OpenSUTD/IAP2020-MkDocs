@@ -31,7 +31,7 @@ Markdown is a lightweight markup language that:
 
 ## Workshop materials
 
-- [Online slide deck](https://opensutd.org/IAP2020-MkDocs/)
+- [Online slide deck](https://opensutd.org/IAP2020-MkDocs/slides)
 - [PDF slide deck](https://github.com/OpenSUTD/IAP2020-MkDocs/raw/master/IAP2020-Mkdocs_slides.pdf)
 - Transcript (coming soon!)
 
