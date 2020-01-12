@@ -1,0 +1,922 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Markdown - SUTD IAP 2020 - Intro to Markdown and MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#markdown" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="SUTD IAP 2020 - Intro to Markdown and MkDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">text_format</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              SUTD IAP 2020 - Intro to Markdown and MkDocs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Markdown
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/OpenSUTD/IAP2020-MkDocs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    OpenSUTD/IAP2020-MkDocs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="SUTD IAP 2020 - Intro to Markdown and MkDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">text_format</i>
+      
+    </a>
+    SUTD IAP 2020 - Intro to Markdown and MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/OpenSUTD/IAP2020-MkDocs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    OpenSUTD/IAP2020-MkDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3DC-IAP/" title="3DC IAP Conference" class="md-nav__link">
+      3DC IAP Conference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opensutd/" title="OpenSUTD" class="md-nav__link">
+      OpenSUTD
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Markdown
+      </label>
+    
+    <a href="./" title="Markdown" class="md-nav__link md-nav__link--active">
+      Markdown
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-editor" class="md-nav__link">
+    Markdown Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    Lists
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unordered-lists" class="md-nav__link">
+    Unordered Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordered-lists" class="md-nav__link">
+    Ordered Lists
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inline-code" class="md-nav__link">
+    Inline code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax-highlighting" class="md-nav__link">
+    Syntax highlighting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#works-with-html" class="md-nav__link">
+    Works with HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../typora/" title="Typora" class="md-nav__link">
+      Typora
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../pandoc/" title="Pandoc" class="md-nav__link">
+      Pandoc
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-editor" class="md-nav__link">
+    Markdown Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    Lists
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unordered-lists" class="md-nav__link">
+    Unordered Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordered-lists" class="md-nav__link">
+    Ordered Lists
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inline-code" class="md-nav__link">
+    Inline code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax-highlighting" class="md-nav__link">
+    Syntax highlighting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#works-with-html" class="md-nav__link">
+    Works with HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h1>
+<p align="center"><img class="is-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/800px-Markdown-mark.svg.png" alt="" width="250em" /></p>
+
+<p>Markdown is a lightweight markup language that:</p>
+<ul>
+<li>is very easy to pick up;</li>
+<li>can be converted into many file formats such as PDF, DOCX, EPUB, HTML, etc. using <a href="https://pandoc.org/">Pandoc</a>;</li>
+<li>can generate diagrams such as UML Sequence Diagrams, Flowcharts, Class and State Diagrams;</li>
+<li>can be used to create a static site, using the static generator <a href="https://www.mkdocs.org/">MkDocs</a>.</li>
+</ul>
+<h2 id="markdown-editor">Markdown Editor<a class="headerlink" href="#markdown-editor" title="Permanent link">&para;</a></h2>
+<table>
+<tr>
+    <th>StackEdit.io</th>
+    <th>GitHub Gist</th>
+</tr>
+<tr>
+    <td>
+        <a href="https://stackedit.io/"><img class="is-rounded" src="https://stackedit.io/static/landing/logo.svg" alt="" width="250em" /></a>
+    </td>
+    <td>
+        <a href="https://gist.github.com/"><img class="is-rounded" src="https://hackernoon.com/hn-images/1*wcXyMGZl43Pcdi1U2bbn-Q.png" alt="" width="250em" /></a>
+    </td>
+</tr>
+</table>
+
+<p>For those of you without a Markdown editor installed, I recommend the usage of either <a href="https://stackedit.io/">Stackedit.io</a> or <a href="https://gist.github.com/">GitHub Gist</a>.</p>
+<p>Stackedit.io provides live preview of your Markdown syntax together with the formatted content, allowing one to update the Markdown syntax and view the changes instantly.</p>
+<p>As for GitHub Gist, live previews are provided in a separate tab for comments on GitHub. The actual gists do not allow for one to preview the formatting of the Markdown syntax. But it would be familiar to get used to the GitHub interface, as we would use it for the creation of the website later.</p>
+<h2 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># This is an h1 tag</code></td>
+<td><img alt="h1" src="https://user-images.githubusercontent.com/48215474/72216401-59c82e80-3518-11ea-992d-ad1e6ee3cca6.png" /></td>
+</tr>
+<tr>
+<td><code>## This is an h2 tag</code></td>
+<td><img alt="h2" src="https://user-images.githubusercontent.com/48215474/72216403-6056a600-3518-11ea-9895-ff85141721f4.png" /></td>
+</tr>
+<tr>
+<td><code>### This is an h3 tag</code></td>
+<td><img alt="h3" src="https://user-images.githubusercontent.com/48215474/72216405-664c8700-3518-11ea-9afa-0221d05cb2a3.png" /></td>
+</tr>
+<tr>
+<td><code>#### This is an h4 tag</code></td>
+<td><img alt="h4" src="https://user-images.githubusercontent.com/48215474/72216408-6b113b00-3518-11ea-9e88-8c3191211335.png" /></td>
+</tr>
+<tr>
+<td><code>##### This is an h5 tag</code></td>
+<td><img alt="h5" src="https://user-images.githubusercontent.com/48215474/72216410-6fd5ef00-3518-11ea-8c29-25ab40e6a036.png" /></td>
+</tr>
+<tr>
+<td><code>###### This is an h6 tag</code></td>
+<td><img alt="h6" src="https://user-images.githubusercontent.com/48215474/72216414-75333980-3518-11ea-9904-03f7e8555207.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Headers are written in Markdown syntax using the <em>hash</em> or <em>pound sign</em> (<code>#</code>).</p>
+<p>They are equivalent to the HTML headings from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, and widely used in Markdown documents as sectioning elements.</p>
+<h2 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*This will be italic*</code></td>
+<td><em>This will be italic</em></td>
+</tr>
+<tr>
+<td><code>_This will also be italic_</code></td>
+<td><em>This will also be italic</em></td>
+</tr>
+<tr>
+<td><code>**This will be bold**</code></td>
+<td><strong>This will be bold</strong></td>
+</tr>
+<tr>
+<td><code>__This will also be bold__</code></td>
+<td><strong>This will also be bold</strong></td>
+</tr>
+<tr>
+<td><code>_You **can** combine them_</code></td>
+<td><em>You <strong>can</strong> combine them</em></td>
+</tr>
+</tbody>
+</table>
+<p>Bold and italic text can be formatted in Markdown syntax using asterisks (<code>*</code>) or underscores (<code>_</code>).</p>
+<p>1 asterisk or underscore for <em>italics</em>, 2 asterisks or underscores for <strong>bold text</strong>.</p>
+<p>Markdown also allows the flexibility of combining bold and italic text together.</p>
+<h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
+<h3 id="unordered-lists">Unordered Lists<a class="headerlink" href="#unordered-lists" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="ul preview " src="https://user-images.githubusercontent.com/48215474/72216584-a0b72380-351a-11ea-8369-ecfadca84d4c.png" /></td>
+<td><img alt="ul actual" src="https://user-images.githubusercontent.com/48215474/72216589-a57bd780-351a-11ea-8fdd-685c0f3202e0.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>For unordered lists, asterisks (<code>*</code>), hyphens (<code>-</code>) and pluses (<code>+</code>) can be used interchangeably as list markers.</p>
+<p>To begin an unordered list, use a list marker, followed by a space between the list marker and the list item.</p>
+<p>To create a unordered sublist within the unordered list, add 2 spaces followed by the list marker.</p>
+<h3 id="ordered-lists">Ordered Lists<a class="headerlink" href="#ordered-lists" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="https://user-images.githubusercontent.com/48215474/72216629-7d40a880-351b-11ea-9d89-8be934ba662a.png" /></td>
+<td><img alt="" src="https://user-images.githubusercontent.com/48215474/72216631-83368980-351b-11ea-9413-7899c7b94c8a.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Ordered list begin with <code>1.</code>, followed by a space between the ordinal marker and the list item.</p>
+<p>To create an ordered sublist with the ordered list, add 2 spaces followed by the ordinal sublist marker in lowercase Roman numerals (<code>i.</code>).</p>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>https://github.com</code></td>
+<td><a href="https://github.com">https://github.com</a></td>
+</tr>
+<tr>
+<td><code>[GitHub](http://github.com)</code></td>
+<td><a href="http://github.com">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<p>In Markdown, web URLs are automatically recognized as rendered as hyperlinks.</p>
+<p>You can also customise the link text by enclosing it in square brackets <code>[ ]</code> and placing the actual URL in brackets <code>( )</code> after the square brackets.</p>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>![SUTD logo](https://www.sutd.edu.sg/assets/sutd/img/logo-black.png)</code></td>
+<td><img alt="SUTD logo" src="https://www.sutd.edu.sg/assets/sutd/img/logo-black.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Images written in Markdown syntax are similar to links, except that they begin with an exclamation mark (<code>!</code>).</p>
+<p>The text in square brackets <code>[ ]</code> is the alternate text of the image and will be displayed when the image is unable to load.</p>
+<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="table preview" src="https://user-images.githubusercontent.com/48215474/72217085-99474880-3521-11ea-9818-cd117c8f88a7.png" /></td>
+<td><img alt="table" src="https://user-images.githubusercontent.com/48215474/72217099-bb40cb00-3521-11ea-8246-94045cd2ecf5.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>To create tables in Markdown syntax, the cells in each row are separated by a <em>vertical bar</em> or <em>pipe</em> (<code>|</code>).</p>
+<p>A table will be generated once the second row of Markdown syntax is input. It consists of three hyphen characters (<code>---</code>) for each cell separated by vertical bars (<code>|</code>) between each cell.</p>
+<p>Regular Markdown syntax applies within the table as well.</p>
+<h2 id="inline-code">Inline code<a class="headerlink" href="#inline-code" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I think you should use an `&lt;addr>` element here instead.</td>
+<td>I think you should use an <code>&lt;addr&gt;</code> element here instead.</td>
+</tr>
+</tbody>
+</table>
+<p>Inline code snippets can be included by adding back-ticks (<code>`</code>) around the code snippet.</p>
+<p>Indenting by 4 spaces will turn an entire paragraph into a code block.</p>
+<h2 id="syntax-highlighting">Syntax highlighting<a class="headerlink" href="#syntax-highlighting" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="syntax preview" src="https://user-images.githubusercontent.com/48215474/72217210-48d0ea80-3523-11ea-9ae2-fd372b1c4af6.png" /></td>
+<td><img alt="syntax" src="https://user-images.githubusercontent.com/48215474/72217212-4d959e80-3523-11ea-91fb-d7da3004a5a5.png" /></td>
+</tr>
+<tr>
+<td><img alt="syntax 2 preview" src="https://user-images.githubusercontent.com/48215474/72217225-6ef68a80-3523-11ea-90ac-a9370b37755a.png" /></td>
+<td><img alt="syntax 2" src="https://user-images.githubusercontent.com/48215474/72217227-728a1180-3523-11ea-97d7-096c041b74a3.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Markdown supports the syntax highlighting of keywords in programming languages.</p>
+<p>By enclosing the code block in 3 back-ticks (<code>```</code>) at the beginning and end of the code block and indicating the programming language after the initial 3 back-ticks, the syntax of the code will be highlighted as expected.</p>
+<h2 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&gt; We're living the future so the present is our past.</code></td>
+<td><img alt="blockquote" src="https://user-images.githubusercontent.com/48215474/72217651-c9461a00-3528-11ea-9a76-bfee754c0b49.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Blockquotes are typically used to reply in email and conversation threads, or otherwise highlight some key phrases.</p>
+<p>They can be written in Python by adding a right angle bracket (<code>&gt;</code>) before the quote.</p>
+<h2 id="works-with-html">Works with HTML<a class="headerlink" href="#works-with-html" title="Permanent link">&para;</a></h2>
+<p>Markdown insufficient? You can add HTML code into Markdown and it will still work.</p>
+<p>But take note <strong>NOT</strong> to mix Markdown syntax and HTML code together in a single line.</p>
+<p>It will not work.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../opensutd/" title="OpenSUTD" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                OpenSUTD
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../typora/" title="Typora" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Typora
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/OpenSUTD/IAP2020-MkDocs" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
