@@ -314,9 +314,38 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pandoc
+      </label>
+    
     <a href="./" title="Pandoc" class="md-nav__link md-nav__link--active">
       Pandoc
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demo-converting-from-markdown-to-html" class="md-nav__link">
+    Demo: Converting from Markdown to HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -350,6 +379,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demo-converting-from-markdown-to-html" class="md-nav__link">
+    Demo: Converting from Markdown to HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -362,7 +407,40 @@
                 
                 
                 <h1 id="pandoc">Pandoc<a class="headerlink" href="#pandoc" title="Permanent link">&para;</a></h1>
-<p>Under construction.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pandoc can be installed on Windows, macOS and Linux by following the instructions <a href="https://pandoc.org/installing.html">here</a>.</p>
+</div>
+<p>A swiss-army knife to convert content between many file formats.</p>
+<p>It allows for conversion between the following file formats:</p>
+<ul>
+<li>PDF</li>
+<li>Markup formats</li>
+<li>HTML formats</li>
+<li>Ebooks</li>
+<li>XML formats</li>
+<li><span><span class="MathJax_Preview">\TeX</span><script type="math/tex">\TeX</script></span> formats</li>
+<li>Word processor formats</li>
+<li>Interactive notebook formats <em>and many more...</em></li>
+</ul>
+<h2 id="demo-converting-from-markdown-to-html">Demo: Converting from Markdown to HTML<a class="headerlink" href="#demo-converting-from-markdown-to-html" title="Permanent link">&para;</a></h2>
+<p>We have a Markdown file <code>demo.md</code> in <code>~/Documents</code> and we want to convert it into a HTML file with the HTML <code>&lt;title&gt;</code> tag <code>'Demo'</code>.</p>
+<ol>
+<li>Open Command Prompt. <kbd>Win</kbd>+ <kbd>R</kbd> , <kbd>cmd</kbd> , <kbd>Enter</kbd></li>
+<li>Navigate to <code>~/Documents</code>. <kbd>cd</kbd> , <kbd>Space</kbd>, <kbd>Documents</kbd>, <kbd>Enter</kbd></li>
+<li>Convert the Markdown file:</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pandoc demo.md -f markdown -t html -s -o demo.html --metadata <span class="nv">pagetitle</span><span class="o">=</span><span class="s2">&quot;Demo&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><code>-f markdown</code>: Converts <code>demo.md</code> from a Markdown file.   </li>
+<li><code>-t html</code>: Converts <code>demo.md</code> to a HTML file.</li>
+<li><code>-s</code>: Creates a standalone file.</li>
+<li><code>-o demo.html</code>: Put the output in the file <code>demo.html</code>.</li>
+<li><code>--metadata pagetitle="Demo"</code>: <code>demo.html</code> will have the page title "Demo".</li>
+</ul>
                 
                   
                 
@@ -442,6 +520,8 @@
       <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>

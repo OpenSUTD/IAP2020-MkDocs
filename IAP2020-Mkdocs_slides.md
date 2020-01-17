@@ -296,7 +296,7 @@ $$ e = mc^2$$
 
 ---
 
-## Introduction to $LaTeX$
+## Introduction to $\LaTeX$
 
 20 January 2020 (Monday)
 TT16 (2.201)
@@ -422,7 +422,7 @@ stateDiagram
 
 ---
 
-## ![height:700px](http://support.typora.io/media/new-80/Screen%20Shot%202019-11-27%20at%2023.18.55.png)
+## ![height:600px](http://support.typora.io/media/new-80/Screen%20Shot%202019-11-27%20at%2023.18.55.png)
 
 ---
 
@@ -459,7 +459,7 @@ Swiss-army knife to convert content
 - HTML formats
 - Ebooks
 - XML formats
-- $TeX$ formats
+- $\TeX$ formats
 - Word processor formats
 - Interactive notebook formats
   $\cdots$
