@@ -328,7 +328,7 @@ Bob-->Alice: I am good thanks!
 
 ---
 
-![hay](http://support.typora.io/media/diagrams/Snip20160816_1.png)
+![UML sequence](https://support.typora.io/media/diagrams/js-sequence.png)
 
 ---
 
@@ -351,7 +351,7 @@ cond(no)->op
 
 ---
 
-![width:800px](http://support.typora.io/media/diagrams/Snip20160816_2.png)
+![width:800px](https://support.typora.io/media/diagrams/flowchart.png)
 
 ---
 
@@ -399,7 +399,7 @@ classDiagram
 
 ---
 
-## ![height:500px](http://support.typora.io/media/new-80/Screen%20Shot%202019-11-27%20at%2023.17.54.png)
+## ![height:500px](https://support.typora.io/media/new-80/class-diagram.png)
 
 ---
 
@@ -422,7 +422,7 @@ stateDiagram
 
 ---
 
-## ![height:600px](http://support.typora.io/media/new-80/Screen%20Shot%202019-11-27%20at%2023.18.55.png)
+## ![height:600px](https://support.typora.io/media/new-80/state-diagram.png)
 
 ---
 
@@ -442,7 +442,7 @@ pie
 
 ---
 
-## ![height:500px](http://support.typora.io/media/new-80/Screen%20Shot%202019-11-27%20at%2023.19.11.png)
+## ![height:500px](https://support.typora.io/media/new-80/pie-chart.png)
 
 ---
 
